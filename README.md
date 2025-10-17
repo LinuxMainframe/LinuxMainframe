@@ -1,79 +1,47 @@
-# Aidan Bradley (@LinuxMainframe) 👋
+# Aidan Bradley (@LinuxMainframe)
 
-Hi, I'm Aidan, a senior Chemistry major at the University of Connecticut with a passion for integrating advanced chemistry with innovative tech solutions. Self-taught in programming, I’ve built production-grade systems for livestream automation, embedded hardware, and network infrastructure over 3+ years. My chemistry expertise spans analytical techniques (GCMS, HPLC, electrochemistry, NMR), synthetic organic chemistry (porphyrins, titanium complexes), and biochemistry (phase transfer, drug delivery). I’m developing personal open-source lab equipment to democratize access to advanced tools for students. Currently learning the Qt Framework, I/O, threading, and multiprocessing to enhance my application development skills. I’m eager to contribute to open-source projects and secure internships or part-time roles in software development, embedded systems, scientific computing, or cybersecurity.
+Chemistry major at UConn with 3+ years building production systems for livestream automation, embedded hardware, and network infrastructure. Self-taught programmer combining laboratory expertise with practical software engineering. Currently exploring Qt Framework and advanced threading while developing open-source lab equipment to make analytical tools more accessible.
 
-## 👀 Interests
-- Python and C application development
-- Embedded systems (Raspberry Pi Pico, microcontrollers, custom PCBs)
-- Networking and infrastructure automation (ProxMox, Ubiquiti, PoE, VLANs, trunking, loopback protection)
-- Analytical chemistry (chromatography, spectrometry, electrochemistry, NMR)
-- Synthetic organic chemistry and biochemistry (porphyrins, drug delivery)
-- Open-source lab equipment design (fluid handling, reaction monitoring, data analysis, calibration)
-- Cybersecurity (network security, ethical hacking, program and hardware security)
+## Technical Skills
 
-## 🌱 Currently Learning
-- **Qt Framework**: Building cross-platform GUI applications
-- **I/O, Threading, Multiprocessing**: Optimizing performance in Python and C
-- **Cybersecurity Tools**: Nmap, Wireshark for network analysis
-- **Advanced Chemistry**: High-level theory (QFT, TDDFT, DFT); analytical sensor theory and manufacturing
+**Languages & Frameworks:** Python (asyncio, multiprocessing), C (systems programming, embedded), Qt Framework (learning), HTML/CSS/JS  
+**Systems:** Linux, ProxMox/LXC, networking (VLANs, PoE, Ubiquiti), Git, Docker basics  
+**Embedded:** RP2040/2030, SPI protocols, KiCad PCB design, STM32 MCUs  
+**Chemistry:** Analytical techniques (HPLC, GCMS, NMR, electrochemistry), synthetic organic chemistry, computational methods (DFT, TDDFT)  
+**Tools:** FFmpeg, OBS WebSockets, Valgrind/Helgrind, v4l2loopback, Doxygen
 
-## 💻 Key Projects
-- **[OPS-Live-Controller](https://github.com/LinuxMainframe/OPS-Live-Controller)**  
-  Python-based automation suite for OBS Studio, powering 24/7 livestreams for paintball tournaments. Manages 16+ IP cameras using FFmpeg/RTMP, WebSockets, and v4l2loopback, achieving near-zero downtime over 3 years. Implements exponential retries and stream quality scoring (resolution, FPS, duplicates) for robust performance.  
+## Featured Projects
 
-- **[RPiPicoMAX6921lib](https://github.com/LinuxMainframe/RPiPicoMAX6921lib)**  
-  C library for RP2040/2030 microcontrollers to drive MAX6921 LED displays via SPI, with plans to support MAX6921 + VFD combos. Applied in custom paintball velocity detection circuits using radar (BGT24LTR11N16) and STM32L476 MCU. Arduino-compatible with Doxygen documentation.  
+**[OPS-Live-Controller](https://github.com/LinuxMainframe/OPS-Live-Controller)** – Production automation system managing 16+ IP cameras for 24/7 paintball tournament livestreams. Built with Python, FFmpeg, and WebSockets; features automatic failover, stream quality scoring, and exponential retry logic. Deployed as systemd services with 3 years of uptime.
 
-- **Persistent IP Camera Connector (libpicc)**  
-  Modular C library for persistent RTMP connections to IP PoE cameras (Reolink models), featuring stream quality scoring and recovery states. Tested with Valgrind (94% pass rate, zero memory leaks) and integrated with v4l2loopback for virtual devices. *(In development, private repo)*  
+**[libwsv5](https://github.com/LinuxMainframe/libwsv5)** – Thread-safe C library implementing OBS WebSocket v5 protocol with full RPC-JSON support. Handles authentication, event subscriptions, and multi-instance connections for production broadcast control.
 
-- **OBS WebSocket v5 Protocol Library (libwsv5)**  
-  C library for persistent RPC-JSON connections to OBS WebSocket v5 servers, enabling all officially supported commands (e.g., scene control, authentication). Designed for thread-safety and modularity, used in production for multi-instance OBS management. *(In development, private repo)*  
+**[RPiPicoMAX6921lib](https://github.com/LinuxMainframe/RPiPicoMAX6921lib)** – C library for RP2040 microcontrollers driving VFD displays via SPI. Includes timing optimization and bit-order management for hardware interfacing. Applied in custom velocity detection circuits for tournament paintball chronography.
 
-- **ProxMox Cluster Infrastructure**  
-  Configured a 3-node cluster on HP ProLiant servers (Gen7/8), testing applications like Ente (troubleshooting S3/Redis issues) and headless Debian LXC containers for multi-machine script deployment. Ensured data hygiene with scheduled backups via ProxMox’s built-in scheduler and custom rsync scripts for redundant storage.  
+**Paintball Chronography System** *(in development)* – Modern FPS measurement system replacing 1989 hardware, integrating BGT24LTR11N16 radar with STM32L476 MCU. Designed for ultra-low power consumption and field deployment across tournament venues nationwide.
 
-- **Personal Chemistry & Open-Source Lab Equipment Projects**  
-  Conducted academic research at UConn on analytical chemistry (GCMS, HPLC, electrochemistry, NMR), synthetic organic chemistry (McMurray Coupling for porphyrin synthesis, novel titanium complexes for photocatalysts), and biochemistry (phase transfer, drug transfer in homogenized solutions like stomach/bile systems). Independently exploring personal chemistry projects, including titanium-based photocatalysts, natural dye synthesis, and abandoned violurate dye synthesis. Developing open-source lab tools (in progress), including contactless fluid pumps to avoid chemical-valve interactions, load-cell circuitry for precise measurements, a DIY spectrophotometer for spectrometry, and reaction monitoring systems for cost-effective student access.  
+**ProxMox Cluster Lab** – 3-node HP ProLiant cluster for testing containerized applications. Implemented automated backups, LXC deployment pipelines, and network segmentation for development workflows.
 
-- **Network Management**  
-  Designed and maintained network infrastructure for paintball tournaments, installing 1000-2000 feet of shielded CAT6/e outdoor cabling and managing Reolink PoE IP cameras (e.g., B810A, 1210A). Configured Ubiquiti dual-band WiFi (private/public networks) supporting 500+ weekly visitors. Optimized access point placement, implemented spanning tree protocol for loopback prevention, and performed fault testing. Developed custom Nmap scripts for Reolink device monitoring, including a MAC lookup table to track network changes (e.g., detecting camera resets/reconfigurations).
+**Network Infrastructure** – Designed tournament-grade networks supporting 500+ concurrent users with outdoor CAT6 installations, Ubiquiti dual-band WiFi, spanning tree protocol, and custom Nmap monitoring scripts for device management.
 
-- **[Paintball Chronography System]**  
-  Developing a modern chronography system for Matt's Outback Paintball to measure FPS of 0.68 caliber paintballs, adapting a SeedStudio module to replace an outdated 1989 design. Secured contracts with nearly paintball fields across the USA to deploy this system, addressing the gap left by a retired electrical engineer who ceased support and repairs. Integrates embedded hardware and software for robust, field-ready velocity detection, enhancing safety and performance for tournament play. Mainly designed with green ideology: ie. ultra-low power consumption technology, and sofware designed to minize power consumption. *(In development, private repo)*
+## Chemistry & Lab Development
 
-## 🛠️ Skills
-- **Programming**: Python (asyncio, Selenium, FFmpeg), C (thread-safety, API design), HTML/CSS/JS (fundamentals)
-- **Systems & Networking**: ProxMox, LXC, Docker basics, PoE standards, Ubiquiti configuration, cable termination, fault isolation
-- **Embedded**: RP2040/2030, SPI, KiCad circuit design, radar/MCU integration
-- **Chemistry**: Analytical (HPLC, spectrometry), synthetic organic (McMurray Coupling, porphyrins), transition metal complexes (titanium), polymerizations, biochemistry (phase transfer, drug transfer)
-- **Lab Equipment Design**: Contactless fluid handling, load-cell circuits, DIY spectrophotometry, reaction monitoring (in development)
-- **Tools**: Git, Valgrind/Helgrind, OBS WebSockets, v4l2loopback, Doxygen
-- **Soft Skills**: Problem-solving, documentation (READMEs with diagrams), project management
+Undergraduate research in analytical and synthetic organic chemistry at UConn, including HPLC/GCMS analysis, McMurray coupling for porphyrin synthesis, and titanium photocatalyst development. Currently building open-source lab equipment: contactless fluid pumps, load-cell measurement circuits, DIY spectrophotometers, and reaction monitoring systems to reduce costs for student researchers.
 
-## 🏆 Achievements
-- **Charles E. Warring Chemistry Scholarship**, UConn (2024)
-- **Cum Laude**, NJCL Latin Honor Society
-- **Volunteer**, Science Olympiad (3D protein modeling instructor)
-- **AP Scores**: Computer Science A (4), Chemistry (4), Psychology (4)
+## Currently Learning
 
-## 💞️ Collaboration
-I’m excited to contribute to open-source projects in:
-- Media automation (e.g., OBS, FFmpeg plugins)
-- Embedded systems (Raspberry Pi, IoT)
-- Cybersecurity tools or network automation
-- Computational chemistry or open-source lab equipment design
+Qt Framework for cross-platform applications • Advanced I/O and multiprocessing optimization • Network security tools (Nmap, Wireshark) • Quantum chemistry methods (QFT, TDDFT) for computational modeling
 
-Reach out via GitHub Issues or email to collaborate!
+## Recognition
 
-## 📫 Contact
-- **Email**: aidan.bradley@uconn.edu
-- **LinkedIn**: [linkedin.com/in/aidanbradleyresearch](https://linkedin.com/in/aidanbradleyresearch)
-- **GitHub**: [github.com/LinuxMainframe](https://github.com/LinuxMainframe)
+**Charles E. Warring Chemistry Scholarship** (UConn, 2024) • **Cum Laude**, National Junior Classical League • Science Olympiad volunteer instructor • AP Computer Science A (4), Chemistry (4)
 
-## ⚡ Fun Fact
-I’m a long-distance backpacker and cyclist, always planning my next adventure on the trails or roads!
+## Open to Opportunities
+
+Seeking internships or part-time roles in software development, embedded systems, scientific computing, or cybersecurity. Interested in contributing to open-source projects involving media automation, IoT, network tools, or computational chemistry.
+
+**Contact:** aidan.bradley@uconn.edu • [LinkedIn](https://linkedin.com/in/aidanbradleyresearch) • Avid backpacker and cyclist
 
 ---
 
-*This profile is a work in progress, just like my projects. Check back for updates!*
+*Actively developing—check back for updates on current projects.*
