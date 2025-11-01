@@ -34,7 +34,7 @@ Qt Framework for cross-platform applications • Advanced I/O and multiprocessin
 
 ## Recognition
 
-**Charles E. Warring Chemistry Scholarship** (UConn, 2024) • **Cum Laude**, National Junior Classical League • Science Olympiad volunteer instructor • AP Computer Science A (4), Chemistry (4)
+**Charles E. Warring Chemistry Scholarship** (UConn, 2024) • **Cum Laude**, NJCL Latin Honor Society • Science Olympiad volunteer instructor • AP Computer Science A (4), Chemistry (4)
 
 ## Open to Opportunities
 
